@@ -94,10 +94,10 @@ exercise = Exercise.new(name: "Russian Twist", focus: "Core", image_url: "https:
 
 exercise = Exercise.new(name: "Inch Worm", focus: "Core", image_url: "https://i.pinimg.com/originals/ed/2e/83/ed2e83c6fad3a9fd6573f830e09dbc95.jpg")
 
-exercise = Exercise.new(name: "High Plank Shoulder Tap", focus: "Core", image_url: "add_later")
+exercise = Exercise.new(name: "High Plank Shoulder Tap", focus: "Core", image_url: "https://cdn1.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/07/plank-shoulder-tap.jpg?itok=Ne4wLs65")
 
-exercise = Exercise.new(name: "Leg Raise", focus: "Core", image_url: "add_later")
+exercise = Exercise.new(name: "Leg Raise", focus: "Core", image_url: "https://i.stack.imgur.com/rr5xK.png")
 
-exercise = Exercise.new(name: "Static Bear Hold", focus: "Core", image_url: "add_later")
+exercise = Exercise.new(name: "Static Bear Hold", focus: "Core", image_url: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hlh100120bodybearplank001-1602693851.png?resize=480:*")
 
-exercise = Exercise.new(name: "Butterfly Sit Up", focus: "Core", image_url: "add_later")
+exercise = Exercise.new(name: "Butterfly Sit Up", focus: "Core", image_url: "https://static.fustany.com/images/en/photo/small_Butterfly_Situps.jpg")
