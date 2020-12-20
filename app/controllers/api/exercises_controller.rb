@@ -23,10 +23,21 @@ class Api::ExercisesController < ApplicationController
     end
   end
 
-  # def update
-  # end
+  def update
+    @exercise = Exercise.find_by(id: params[:id])
 
-  # def destroy
-  # end
+    @exercise.name = params[:name] || @exercise.name
+    @exercise.focus = params[:focus] || @exercise.focus
+    @exercise.image_url = params[:image_url] || @exercise.image_url
+    @exercise.save
+
+    render "show.json.jb"
+  end
+
+  def destroy
+    @exercise = Exercise.find_by(id: params[:id])
+    @exercise.destroy
+    render json: {message: "Exercise has been removed"}
+  end
 
 end
