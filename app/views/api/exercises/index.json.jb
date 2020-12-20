@@ -1,0 +1,8 @@
+@exercises.map do |exercise|
+  {
+    id: exercise.id,
+    name: exercise.name,
+    focus: exercise.focus,
+    image_url: exercise.image_url
+  }
+end
