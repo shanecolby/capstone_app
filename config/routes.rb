@@ -9,5 +9,7 @@ Rails.application.routes.draw do
     post "/exercises" => "exercises#create"
     patch "/exercises/:id" => "exercises#update"
     delete "/exercises/:id" => "exercises#destroy"
+
+    post "/users" => "users#create"
   end
 end
