@@ -14,11 +14,11 @@ class Api::SelectedExercisesController < ApplicationController
 
   def create
     @selected_exercise = SelectedExercise.create(
-      exercise_id: 1,
-      user_id: 1,
-      status: "",
-      workout_id: 1,
-      exercise_name: "name"
+      # exercise_id: 1,
+      # user_id: 1,
+      # status: "",
+      # workout_id: 1,
+      # exercise_name: "name"
     )
     render "show.json.jb"
   end
