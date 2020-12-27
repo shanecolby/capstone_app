@@ -1,0 +1,7 @@
+{
+  id: @exercise.id,
+  status: @exercise.status,
+  workout_id: @exercise.workout_id,
+  workout_name: @exercise.name
+
+}
