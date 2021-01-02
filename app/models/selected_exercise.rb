@@ -1,4 +1,5 @@
 class SelectedExercise < ApplicationRecord
   belongs_to :user
-  has_many :exercises
+  belongs_to :exercise
+  belongs_to :workout
 end

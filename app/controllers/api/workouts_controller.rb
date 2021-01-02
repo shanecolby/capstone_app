@@ -14,12 +14,12 @@ class Api::WorkoutsController < ApplicationController
 
     @workout.save
 
-    selected_exercises.each do |se|
-      se.update(status: "added to workout", workout_id: @workout_id)
-  end
+  #   selected_exercises.each do |se|
+  #     se.update(status: "added to workout", workout_id: @workout_id)
+  # end
 
-  def show
-    @workout = current_user.workouts.find_by(id: params[:id])
+  # def show
+  #   @workout = current_user.workouts.find_by(id: params[:id])
     render "show.json.jb"
   end
 end
