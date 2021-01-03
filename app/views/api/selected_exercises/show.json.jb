@@ -1,7 +1,7 @@
 {
-  id: @exercise.id,
-  status: @exercise.status,
-  workout_id: @exercise.workout_id,
-  workout_name: @exercise.name
+  id: @selected_exercise.id,
+  status: @selected_exercise.status,
+  workout_id: @selected_exercise.workout_id,
+
 
 }

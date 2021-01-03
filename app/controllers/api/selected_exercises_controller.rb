@@ -5,6 +5,7 @@ class Api::SelectedExercisesController < ApplicationController
     if current_user
       @selected_exercises = current_user.selected_exercises.where(status: "added")
       render "index.json.jb"
+    end
     # else
     #   render json: "Please sign into your account"
     # end
@@ -18,8 +19,9 @@ class Api::SelectedExercisesController < ApplicationController
       user_id: 1,
       status: "",
       workout_id: 1,
-      exercise_name: "name",
     )
+    @selected_exercise.save!
+
     render "show.json.jb"
   end
 
