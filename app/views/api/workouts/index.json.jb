@@ -1,0 +1,8 @@
+@workouts.map do |workout|
+  {
+    id: workout.id,
+    user_id: workout.user_id,
+    workout_name: workout.workout_name,
+
+  }
+end

@@ -19,7 +19,7 @@ class Api::ExercisesController < ApplicationController
     if @exercise.save
       render "show.json.jb"
     else
-      render json: {errors: @exercise.errors.full_messages}, status: :umprocessable_entity
+      render json: {errors: @exercise.errors.full_messages}
     end
   end
 
