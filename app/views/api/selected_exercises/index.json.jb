@@ -1,7 +1,7 @@
 @selected_exercises.map do |selected_exercise|
   {
     id: selected_exercise.id,
-    exercise_id: selected_exercise.exercise_id,
+    exercise: selected_exercise.exercise,
     user_id: selected_exercise.user_id,
     status: selected_exercise.status,
     workout_id: selected_exercise.workout_id,

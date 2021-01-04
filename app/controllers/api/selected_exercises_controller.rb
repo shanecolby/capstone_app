@@ -2,7 +2,7 @@ class Api::SelectedExercisesController < ApplicationController
   # before_action: :authenticate_user
 
   def index
-    @selected_exercises = SelectedExercise.all
+    @selected_exercises = current_user.selected_exercises 
     render 'index.json.jb'
   end
 
