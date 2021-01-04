@@ -15,12 +15,12 @@ class Api::SelectedExercisesController < ApplicationController
 
   def create
     @selected_exercise = SelectedExercise.create(
-      exercise_id: 1,
-      user_id: 1,
-      status: "",
-      workout_id: 1,
+      exercise_id: params[:exercise_id],
+      user_id: current_user.id,
+      status: "selected",
+      # workout_id: 1,
     )
-    @selected_exercise.save!
+    @selected_exercise.save
 
     render "show.json.jb"
   end

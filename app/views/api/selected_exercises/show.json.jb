@@ -1,5 +1,7 @@
 {
   id: @selected_exercise.id,
+  exercise_id: @selected_exercise.exercise_id,
+  user_id: @selected_exercise.user_id,
   status: @selected_exercise.status,
   workout_id: @selected_exercise.workout_id,
 

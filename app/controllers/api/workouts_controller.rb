@@ -16,6 +16,8 @@ class Api::WorkoutsController < ApplicationController
 
     selected_exercises.each do |se|
       se.update(status: "added to workout", workout_id: @workout_id)
+    end
+    render "show.json.jb"
   end
 
   def show
