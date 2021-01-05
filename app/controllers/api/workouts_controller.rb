@@ -22,8 +22,8 @@ class Api::WorkoutsController < ApplicationController
   end
 
 
-  # def show
-  #   @workout = current_user.workouts.find_by(id: params[:id])
-  #   render "show.json.jb"
-  # end
+  def show
+    @workout = current_user.workouts.find_by(id: params[:id])
+    render "show.json.jb"
+  end
 end
