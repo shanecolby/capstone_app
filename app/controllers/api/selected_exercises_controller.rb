@@ -31,4 +31,10 @@ class Api::SelectedExercisesController < ApplicationController
     render "show.json.jb"
   end
 
+  def destroy
+    @selected_exercise = SelectedExercise.find_by(id: params[:id])
+    @selected_exercise.update(status: "removed")
+    render json: {message: "this exercise has been removed"}
+  end
+
 end

@@ -19,5 +19,6 @@ Rails.application.routes.draw do
 
     get "/selected_exercises" => "selected_exercises#index"
     post "/selected_exercises" => "selected_exercises#create"
+    delete "/selected_exercises/:id" => "selected_exercises#destroy"
   end
 end
