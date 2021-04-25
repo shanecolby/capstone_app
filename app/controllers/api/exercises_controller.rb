@@ -1,6 +1,10 @@
 class Api::ExercisesController < ApplicationController
   def index
     @exercises = Exercise.all
+    p "current_user"
+    p current_user
+    p "current_user"
+
     render "index.json.jb"
 
   end
@@ -16,11 +20,11 @@ class Api::ExercisesController < ApplicationController
       focus: params[:focus],
       image_url: params[:image_url]
     )
-    if @exercise.save
-      render "show.json.jb"
-    else
-      render json: {errors: @exercise.errors.full_messages}
-    end
+    @exercise.save!
+    render "show.json.jb"
+    # else
+    #   render json: {errors: @exercise.errors.full_messages}
+    # end
   end
 
   def update

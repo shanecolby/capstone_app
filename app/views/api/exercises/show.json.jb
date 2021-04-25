@@ -4,3 +4,5 @@
   focus: @exercise.focus,
   image_url: @exercise.image_url
 }
+# user: @exercise.user,
+# user_id: @exercise.user_id
